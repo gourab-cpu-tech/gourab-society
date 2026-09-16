@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gourab-society.vercel.app"),
   title: {
     default: "Gourab Society | Built for Warriors",
     template: "%s | Gourab Society",
@@ -36,12 +37,14 @@ export const metadata: Metadata = {
     siteName: "Gourab Society",
     locale: "en_US",
     type: "website",
+    images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Gourab Society | Built for Warriors",
     description:
       "Build a stronger mind, body, and presence with Gourab Society.",
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
