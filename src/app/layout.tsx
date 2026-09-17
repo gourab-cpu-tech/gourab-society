@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gourab-society.vercel.app"),
+  other: {
+    "google-site-verification": "gH3dHCwI6O-2IRNQjntTieVZrqb7_tf6vPd9kqUb0kk",
+  },
   title: {
     default: "Gourab Society | Built for Warriors",
     template: "%s | Gourab Society",
