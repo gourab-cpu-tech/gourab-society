@@ -22,32 +22,43 @@ export default function MobileMenu() {
 
       {isOpen && (
         <div className="mobile-menu-panel">
-          <Link href="#paths" onClick={() => setIsOpen(false)}>
-            Paths
+          <div className="mobile-menu-header">Menu</div>
+          <Link className="mobile-menu-item" href="#paths" onClick={() => setIsOpen(false)}>
+            <span>Paths</span>
+            <span aria-hidden="true">↗</span>
           </Link>
-          <Link href="/knowledge" onClick={() => setIsOpen(false)}>
-            Knowledge Hub
+          <Link className="mobile-menu-item" href="/knowledge" onClick={() => setIsOpen(false)}>
+            <span>Knowledge Hub</span>
+            <span aria-hidden="true">↗</span>
           </Link>
-          <Link href="/store" onClick={() => setIsOpen(false)}>
-            Store
+          <Link className="mobile-menu-item" href="/store" onClick={() => setIsOpen(false)}>
+            <span>Store</span>
+            <span aria-hidden="true">↗</span>
           </Link>
-          <Link href="/about" onClick={() => setIsOpen(false)}>
-            About
+          <Link className="mobile-menu-item" href="/about" onClick={() => setIsOpen(false)}>
+            <span>About</span>
+            <span aria-hidden="true">↗</span>
           </Link>
+
           <div className="mobile-menu-divider" />
+
           <a
+            className="mobile-menu-item social-item"
             href="https://youtube.com/@gourab.society?si=-WaxCE7xxQr6HDJW"
             target="_blank"
             rel="noreferrer"
           >
-            YouTube ↗
+            <span>YouTube</span>
+            <span aria-hidden="true">↗</span>
           </a>
           <a
+            className="mobile-menu-item social-item"
             href="https://www.instagram.com/gourab.fitness?igsh=MWI5Nm54eHVtdGdoeg%3D%3D&utm_source=qr"
             target="_blank"
             rel="noreferrer"
           >
-            Instagram ↗
+            <span>Instagram</span>
+            <span aria-hidden="true">↗</span>
           </a>
         </div>
       )}
