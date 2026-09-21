@@ -135,11 +135,13 @@ a {
   isolation: isolate;
   visibility: hidden;
   pointer-events: none;
+  transition: visibility 0s linear 420ms;
 }
 
 .mobile-menu-layer.is-open {
   visibility: visible;
   pointer-events: auto;
+  transition-delay: 0s;
 }
 
 .mobile-menu-backdrop {
