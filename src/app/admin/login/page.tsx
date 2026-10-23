@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function AdminLoginPage() {
   const router = useRouter();
@@ -39,10 +40,10 @@ export default function AdminLoginPage() {
   return (
     <main className="admin-setup-page">
       <section className="admin-setup-card">
-        <a className="brand" href="/">
+        <Link className="brand" href="/">
           <span className="brand-mark">GS</span>
           <span className="brand-name">Gourab Society</span>
-        </a>
+        </Link>
 
         <p className="eyebrow">
           <span />

@@ -46,8 +46,9 @@ export default function Home() {
           <div className="nav-links">
             <a href="#paths">Paths</a>
             <Link href="/knowledge">Knowledge Hub</Link>
-            <a href="/store">Store</a>
-            <a href="/about">About</a>
+            <Link href="/tools/fitness-calculator">Fitness Tools</Link>
+            <Link href="/store">Store</Link>
+            <Link href="/about">About</Link>
           </div>
 
           <a className="nav-cta" href="#paths">
@@ -73,20 +74,29 @@ export default function Home() {
           </p>
 
           <div className="hero-actions">
-            <a className="button button-primary" href="#paths">
-              Start your journey
-              <span aria-hidden="true">↗</span>
-            </a>
+            <div className="hero-actions-row">
+              <a className="button button-primary" href="#paths">
+                Start your journey
+                <span aria-hidden="true">↗</span>
+              </a>
 
-            <a
-              className="button button-secondary"
-              href="https://youtube.com/@gourab.society?si=-WaxCE7xxQr6HDJW"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Watch on YouTube
-              <span aria-hidden="true">▶</span>
-            </a>
+              <a
+                className="button button-secondary"
+                href="https://youtube.com/@gourab.society?si=-WaxCE7xxQr6HDJW"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Watch on YouTube
+                <span aria-hidden="true">▶</span>
+              </a>
+            </div>
+
+            <div className="hero-actions-row">
+              <Link className="button button-secondary button-secondary--fitness" href="/tools/fitness-calculator">
+                Calculate Your Fitness
+                <span aria-hidden="true">↗</span>
+              </Link>
+            </div>
           </div>
         </div>
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { connectToDatabase } from "@/lib/mongodb";
 import { Article } from "@/models/Article";
@@ -39,14 +40,14 @@ export default async function ArticlePage({
   return (
     <main className="article-page">
       <nav className="knowledge-nav">
-        <a className="brand" href="/">
+        <Link className="brand" href="/">
           <span className="brand-mark">GS</span>
           <span className="brand-name">Gourab Society</span>
-        </a>
+        </Link>
 
-        <a className="back-home" href={`/knowledge/${pillar}`}>
+        <Link className="back-home" href={`/knowledge/${pillar}`}>
           ← Back to {pillar}
-        </a>
+        </Link>
       </nav>
 
       <article className="article-reading-view">
