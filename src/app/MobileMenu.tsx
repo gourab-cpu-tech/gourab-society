@@ -57,7 +57,7 @@ export default function MobileMenu() {
               <span className="mobile-menu-arrow" aria-hidden="true" />
             </Link>
             <Link className="mobile-menu-item" href="/tools/fitness-calculator" onClick={() => setIsOpen(false)} tabIndex={isOpen ? 0 : -1}>
-              <span>Fitness Tools</span>
+              <span>Fitness Calculator</span>
               <span className="mobile-menu-arrow" aria-hidden="true" />
             </Link>
             <Link className="mobile-menu-item" href="/store" onClick={() => setIsOpen(false)} tabIndex={isOpen ? 0 : -1}>

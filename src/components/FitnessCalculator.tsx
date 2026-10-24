@@ -139,7 +139,7 @@ export function FitnessCalculator() {
             <Link href="/">Home</Link>
             <Link href="/knowledge">Knowledge Hub</Link>
             <Link href="/tools/fitness-calculator" aria-current="page" className="is-active">
-              Fitness Tools
+              Fitness Calculator
             </Link>
             <Link href="/store">Store</Link>
             <Link href="/about">About</Link>

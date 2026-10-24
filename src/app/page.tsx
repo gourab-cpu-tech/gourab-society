@@ -46,7 +46,7 @@ export default function Home() {
           <div className="nav-links">
             <a href="#paths">Paths</a>
             <Link href="/knowledge">Knowledge Hub</Link>
-            <Link href="/tools/fitness-calculator">Fitness Tools</Link>
+            <Link href="/tools/fitness-calculator">Fitness Calculator</Link>
             <Link href="/store">Store</Link>
             <Link href="/about">About</Link>
           </div>
